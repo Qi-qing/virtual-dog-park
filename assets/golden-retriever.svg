@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200"
+     role="img" aria-labelledby="golden-title golden-desc">
+  <title id="golden-title">Illustration of a Golden Retriever</title>
+  <desc id="golden-desc">A simple cartoon drawing of a sitting golden retriever with soft golden fur, floppy ears and a happy tongue-out smile.</desc>
+
+  <!-- background panel -->
+  <rect width="200" height="200" rx="28" fill="#FDF2DC"/>
+
+  <!-- feathery tail -->
+  <path d="M148 162 q28 -6 24 -34 q0 24 -28 22 Z" fill="#E9B464" stroke="#8A5A22" stroke-width="4"
+        stroke-linejoin="round"/>
+
+  <!-- back paws -->
+  <ellipse cx="74" cy="176" rx="16" ry="11" fill="#F8E4C0" stroke="#8A5A22" stroke-width="4"/>
+  <ellipse cx="126" cy="176" rx="16" ry="11" fill="#F8E4C0" stroke="#8A5A22" stroke-width="4"/>
+
+  <!-- body -->
+  <ellipse cx="100" cy="146" rx="46" ry="42" fill="#E9B464" stroke="#8A5A22" stroke-width="4"/>
+  <!-- pale chest fur -->
+  <ellipse cx="100" cy="164" rx="28" ry="24" fill="#F8E4C0" stroke="#8A5A22" stroke-width="4"/>
+
+  <!-- floppy ears (behind the head) -->
+  <ellipse cx="58" cy="96" rx="14" ry="27" fill="#D79A46" stroke="#8A5A22" stroke-width="4"
+           transform="rotate(-14 58 96)"/>
+  <ellipse cx="142" cy="96" rx="14" ry="27" fill="#D79A46" stroke="#8A5A22" stroke-width="4"
+           transform="rotate(14 142 96)"/>
+
+  <!-- head -->
+  <circle cx="100" cy="78" r="40" fill="#E9B464" stroke="#8A5A22" stroke-width="4"/>
+  <!-- lighter fur on top of the head -->
+  <ellipse cx="100" cy="52" rx="27" ry="16" fill="#F3CE8F"/>
+
+  <!-- muzzle -->
+  <ellipse cx="100" cy="97" rx="22" ry="16" fill="#F8E4C0" stroke="#8A5A22" stroke-width="4"/>
+  <!-- happy tongue -->
+  <ellipse cx="100" cy="113" rx="8" ry="10" fill="#E98A8A" stroke="#8A5A22" stroke-width="3"/>
+  <!-- nose -->
+  <ellipse cx="100" cy="89" rx="8" ry="6" fill="#3A2E26"/>
+  <!-- smile -->
+  <path d="M92 102 q8 9 16 0" fill="none" stroke="#3A2E26" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- eyes -->
+  <circle cx="84" cy="68" r="5" fill="#3A2E26"/>
+  <circle cx="116" cy="68" r="5" fill="#3A2E26"/>
+  <circle cx="86" cy="66" r="1.8" fill="#FFFFFF"/>
+  <circle cx="118" cy="66" r="1.8" fill="#FFFFFF"/>
+</svg>

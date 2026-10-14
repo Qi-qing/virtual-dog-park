@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Dog Park</title>
+  <meta name="description" content="A beginner-friendly dog encyclopedia with three popular breeds.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Virtual Dog Park</h1>
+    <p class="welcome" id="welcome">
+      Welcome to the park! Meet three friendly dog breeds in the encyclopedia below.
+    </p>
+  </header>
+
+  <main id="main">
+    <section class="encyclopedia" aria-labelledby="encyclopedia-heading">
+      <h2 id="encyclopedia-heading">Dog Encyclopedia</h2>
+      <p class="section-note">
+        Each card shows one breed, what it is like to live with, and how much work it needs every day.
+      </p>
+
+      <div class="dog-grid">
+
+        <!-- Beagle -->
+        <article class="dog-card">
+          <img class="dog-image"
+               src="assets/beagle.svg"
+               alt="Illustration of a Beagle"
+               width="200" height="200">
+          <h3 class="dog-name">Beagle</h3>
+          <dl class="dog-facts">
+            <dt>Size</dt>
+            <dd>Small. About 33&ndash;40 cm tall and 9&ndash;11 kg, so it fits easily in a small home.</dd>
+            <dt>Personality</dt>
+            <dd>Friendly, curious and cheerful. It follows its nose everywhere and usually gets along well with children and other dogs.</dd>
+            <dt>Everyday care</dt>
+            <dd>Two walks a day plus time to sniff. Brush once a week. Beagles love food, so measure meals to keep a healthy weight.</dd>
+          </dl>
+          <button class="fact-toggle" type="button" aria-expanded="false" aria-controls="fact-beagle">
+            Show fun fact
+          </button>
+          <p class="fun-fact" id="fact-beagle" hidden>
+            A beagle's nose has around 220 million smell receptors. That is why it can follow a scent for hours.
+          </p>
+        </article>
+
+        <!-- Golden Retriever -->
+        <article class="dog-card">
+          <img class="dog-image"
+               src="assets/golden-retriever.svg"
+               alt="Illustration of a Golden Retriever"
+               width="200" height="200">
+          <h3 class="dog-name">Golden Retriever</h3>
+          <dl class="dog-facts">
+            <dt>Size</dt>
+            <dd>Large. About 55&ndash;61 cm tall and 25&ndash;34 kg, so it needs room to stretch out.</dd>
+            <dt>Personality</dt>
+            <dd>Gentle, patient and eager to please. A classic family dog that loves carrying things in its mouth and being near people.</dd>
+            <dt>Everyday care</dt>
+            <dd>One to two hours of exercise daily. Brush two or three times a week, more often when shedding. Check the ears and trim the nails monthly.</dd>
+          </dl>
+          <button class="fact-toggle" type="button" aria-expanded="false" aria-controls="fact-golden">
+            Show fun fact
+          </button>
+          <p class="fun-fact" id="fact-golden" hidden>
+            Golden retrievers were bred in Scotland to fetch birds from water, so most of them still love swimming.
+          </p>
+        </article>
+
+        <!-- Poodle -->
+        <article class="dog-card">
+          <img class="dog-image"
+               src="assets/poodle.svg"
+               alt="Illustration of a Poodle"
+               width="200" height="200">
+          <h3 class="dog-name">Poodle</h3>
+          <dl class="dog-facts">
+            <dt>Size</dt>
+            <dd>Three sizes: Toy (under 28 cm), Miniature (28&ndash;38 cm) and Standard (over 45 cm).</dd>
+            <dt>Personality</dt>
+            <dd>Clever, lively and quick to learn. Often called one of the smartest breeds, and it enjoys learning new tricks.</dd>
+            <dt>Everyday care</dt>
+            <dd>Daily walks and play, plus a short training game. The curly coat needs brushing every other day and a professional trim every 4&ndash;8 weeks.</dd>
+          </dl>
+          <button class="fact-toggle" type="button" aria-expanded="false" aria-controls="fact-poodle">
+            Show fun fact
+          </button>
+          <p class="fun-fact" id="fact-poodle" hidden>
+            The poodle's famous haircut started as practical work clothes: thick fur kept the joints and chest warm in cold water.
+          </p>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Virtual Dog Park &middot; a small practice project built with HTML, CSS and JavaScript.</p>
+    <p class="footer-year" id="year"></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+/* ===========================================================
+   Virtual Dog Park - style.css
+   A small stylesheet for a first-year web project.
+   Layout idea: one column on a phone, three columns on a laptop.
+   =========================================================== */
+
+/* 1. Colour and spacing variables --------------------------- */
+:root {
+  --green: #3F7D45;
+  --green-dark: #2C5A31;
+  --cream: #FBF7EF;
+  --card: #FFFFFF;
+  --ink: #26302A;
+  --ink-soft: #4E5B52;
+  --line: #DCE5D6;
+  --page-width: 1000px;
+}
+
+/* 2. Base styles -------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 16px;
+  background-color: var(--cream);
+  color: var(--ink);
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+  margin: 0 0 12px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--green-dark);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--green-dark);
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: var(--green-dark);
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+/* 3. Header ------------------------------------------------- */
+.site-header {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 40px 0 24px;
+  text-align: center;
+}
+
+.welcome {
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* 4. Main content ------------------------------------------- */
+main {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.section-note {
+  color: var(--ink-soft);
+  margin-bottom: 28px;
+}
+
+/* The grid: 1 column on a narrow screen, up to 3 on a wide one. */
+.dog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/* 5. Dog cards ---------------------------------------------- */
+.dog-card {
+  background-color: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: 0 2px 6px rgba(38, 48, 42, 0.06);
+}
+
+.dog-image {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto 16px;
+}
+
+.dog-name {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+/* A description list holds the three notes for each breed. */
+.dog-facts {
+  margin: 0;
+}
+
+.dog-facts dt {
+  font-weight: 700;
+  color: var(--green);
+  margin-top: 14px;
+}
+
+.dog-facts dd {
+  margin: 2px 0 0;
+  color: var(--ink-soft);
+}
+
+/* 6. Fun fact button and text ------------------------------ */
+.fact-toggle {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px 16px;
+  background-color: var(--green);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fact-toggle:hover {
+  background-color: var(--green-dark);
+}
+
+.fact-toggle:focus-visible {
+  outline: 3px solid var(--green-dark);
+  outline-offset: 2px;
+}
+
+.fun-fact {
+  margin-top: 12px;
+  padding: 12px 14px;
+  background-color: #EFF5EA;
+  border-left: 4px solid var(--green);
+  border-radius: 0 10px 10px 0;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+/* Keep items with the hidden attribute really hidden. */
+[hidden] {
+  display: none;
+}
+
+/* 7. Footer ------------------------------------------------- */
+.site-footer {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 24px 0 40px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.footer-year {
+  margin: 4px 0 0;
+}
+
+/* 8. Wider screens (laptops and tablets) -------------------- */
+@media (min-width: 760px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .site-header {
+    padding: 56px 0 32px;
+  }
+
+  /* Three equal columns once there is enough room. */
+  .dog-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dog-card {
+    padding: 28px 24px;
+  }
+
+  /* Push the button to the bottom so all cards line up. */
+  .dog-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fun-fact {
+    margin-top: auto;
+  }
+}

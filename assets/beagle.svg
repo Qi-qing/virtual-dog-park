@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200"
+     role="img" aria-labelledby="beagle-title beagle-desc">
+  <title id="beagle-title">Illustration of a Beagle</title>
+  <desc id="beagle-desc">A simple cartoon drawing of a sitting beagle with long floppy ears and a white, brown and tan coat.</desc>
+
+  <!-- background panel -->
+  <rect width="200" height="200" rx="28" fill="#E7F2E4"/>
+
+  <!-- tail -->
+  <path d="M148 166 q26 -6 22 -34" fill="none" stroke="#2E2A26" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- back paws -->
+  <ellipse cx="74" cy="176" rx="16" ry="11" fill="#FFFFFF" stroke="#2E2A26" stroke-width="4"/>
+  <ellipse cx="126" cy="176" rx="16" ry="11" fill="#FFFFFF" stroke="#2E2A26" stroke-width="4"/>
+
+  <!-- body -->
+  <ellipse cx="100" cy="146" rx="46" ry="42" fill="#FFFFFF" stroke="#2E2A26" stroke-width="4"/>
+  <!-- brown back marking -->
+  <ellipse cx="100" cy="138" rx="32" ry="22" fill="#B5793F" stroke="#2E2A26" stroke-width="4"/>
+  <!-- white chest -->
+  <ellipse cx="100" cy="166" rx="26" ry="20" fill="#FFF6E6" stroke="#2E2A26" stroke-width="4"/>
+
+  <!-- long floppy ears (behind the head) -->
+  <ellipse cx="56" cy="98" rx="13" ry="32" fill="#B5793F" stroke="#2E2A26" stroke-width="4"
+           transform="rotate(-12 56 98)"/>
+  <ellipse cx="144" cy="98" rx="13" ry="32" fill="#B5793F" stroke="#2E2A26" stroke-width="4"
+           transform="rotate(12 144 98)"/>
+
+  <!-- head -->
+  <circle cx="100" cy="78" r="40" fill="#FFFFFF" stroke="#2E2A26" stroke-width="4"/>
+  <!-- brown patches around the eyes -->
+  <ellipse cx="84" cy="70" rx="15" ry="13" fill="#B5793F"/>
+  <ellipse cx="116" cy="70" rx="15" ry="13" fill="#B5793F"/>
+
+  <!-- muzzle -->
+  <ellipse cx="100" cy="96" rx="21" ry="15" fill="#FFF6E6" stroke="#2E2A26" stroke-width="4"/>
+  <!-- nose -->
+  <ellipse cx="100" cy="89" rx="8" ry="6" fill="#2E2A26"/>
+  <!-- mouth -->
+  <path d="M100 95 v8 M100 103 q-8 6 -14 0 M100 103 q8 6 14 0" fill="none"
+        stroke="#2E2A26" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- eyes -->
+  <circle cx="84" cy="68" r="5" fill="#2E2A26"/>
+  <circle cx="116" cy="68" r="5" fill="#2E2A26"/>
+  <circle cx="86" cy="66" r="1.8" fill="#FFFFFF"/>
+  <circle cx="118" cy="66" r="1.8" fill="#FFFFFF"/>
+</svg>

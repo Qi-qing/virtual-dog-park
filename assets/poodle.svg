@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200"
+     role="img" aria-labelledby="poodle-title poodle-desc">
+  <title id="poodle-title">Illustration of a Poodle</title>
+  <desc id="poodle-desc">A simple cartoon drawing of a poodle with curly cream fur, a fluffy topknot and a round pom-pom tail.</desc>
+
+  <!-- background panel -->
+  <rect width="200" height="200" rx="28" fill="#E6EEF7"/>
+
+  <!-- pom-pom tail -->
+  <path d="M146 158 q22 -6 24 -26" fill="none" stroke="#B9A88E" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="172" cy="130" r="13" fill="#F4EFE6" stroke="#7A6A56" stroke-width="4"/>
+
+  <!-- thin back legs -->
+  <rect x="66" y="150" width="14" height="28" rx="7" fill="#F4EFE6" stroke="#7A6A56" stroke-width="4"/>
+  <rect x="120" y="150" width="14" height="28" rx="7" fill="#F4EFE6" stroke="#7A6A56" stroke-width="4"/>
+
+  <!-- body -->
+  <ellipse cx="100" cy="142" rx="42" ry="38" fill="#F4EFE6" stroke="#7A6A56" stroke-width="4"/>
+
+  <!-- curls on the body -->
+  <circle cx="78" cy="124" r="10" fill="#F4EFE6" stroke="#7A6A56" stroke-width="4"/>
+  <circle cx="122" cy="124" r="10" fill="#F4EFE6" stroke="#7A6A56" stroke-width="4"/>
+  <circle cx="100" cy="140" r="11" fill="#F4EFE6" stroke="#7A6A56" stroke-width="4"/>
+
+  <!-- fluffy chest -->
+  <circle cx="100" cy="164" r="19" fill="#F4EFE6" stroke="#7A6A56" stroke-width="4"/>
+
+  <!-- ankle pom-poms -->
+  <circle cx="73" cy="172" r="13" fill="#F4EFE6" stroke="#7A6A56" stroke-width="4"/>
+  <circle cx="127" cy="172" r="13" fill="#F4EFE6" stroke="#7A6A56" stroke-width="4"/>
+
+  <!-- long ears (behind the head) -->
+  <ellipse cx="58" cy="104" rx="13" ry="31" fill="#EDE4D4" stroke="#7A6A56" stroke-width="4"
+           transform="rotate(-10 58 104)"/>
+  <ellipse cx="142" cy="104" rx="13" ry="31" fill="#EDE4D4" stroke="#7A6A56" stroke-width="4"
+           transform="rotate(10 142 104)"/>
+
+  <!-- head -->
+  <circle cx="100" cy="80" r="38" fill="#F4EFE6" stroke="#7A6A56" stroke-width="4"/>
+  <!-- fluffy topknot -->
+  <circle cx="78" cy="54" r="15" fill="#F4EFE6" stroke="#7A6A56" stroke-width="4"/>
+  <circle cx="122" cy="54" r="15" fill="#F4EFE6" stroke="#7A6A56" stroke-width="4"/>
+  <circle cx="100" cy="44" r="17" fill="#F4EFE6" stroke="#7A6A56" stroke-width="4"/>
+
+  <!-- narrow muzzle -->
+  <ellipse cx="100" cy="98" rx="17" ry="16" fill="#FBF7EF" stroke="#7A6A56" stroke-width="4"/>
+  <!-- nose -->
+  <ellipse cx="100" cy="90" rx="7" ry="5" fill="#3A2E26"/>
+  <!-- mouth -->
+  <path d="M100 95 v6 M100 101 q-6 5 -11 0 M100 101 q6 5 11 0" fill="none"
+        stroke="#3A2E26" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- eyes -->
+  <circle cx="84" cy="70" r="5" fill="#2E2A26"/>
+  <circle cx="116" cy="70" r="5" fill="#2E2A26"/>
+  <circle cx="86" cy="68" r="1.8" fill="#FFFFFF"/>
+  <circle cx="118" cy="68" r="1.8" fill="#FFFFFF"/>
+</svg>
