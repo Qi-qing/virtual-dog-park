@@ -101,7 +101,10 @@
     <section class="my-dog" aria-labelledby="my-dog-heading">
       <h2 id="my-dog-heading">My Virtual Dog</h2>
       <p class="section-note">
-        Pick a breed, give your dog a name, then press Adopt. After that you can feed it or play with it.
+        Pick a breed, give your dog a name, then press Adopt. After that you can feed your dog,
+        play with it, or move on to the next day and watch it grow. Feed and Play add 10 happiness
+        each (up to 100), and every new day costs 5. Your dog is saved inside this browser, so it is
+        still here after you refresh the page. Adopting again replaces your current dog with a new puppy.
       </p>
 
       <div class="my-dog-layout">
@@ -155,7 +158,10 @@
           <div class="pet-actions">
             <button class="primary-button" id="feed-button" type="button">Feed</button>
             <button class="primary-button" id="play-button" type="button">Play</button>
+            <button class="primary-button button-outline" id="next-day-button" type="button">Next Day</button>
           </div>
+
+          <p class="pet-message" id="pet-message" role="status" aria-live="polite" hidden></p>
         </div>
 
       </div>

@@ -280,12 +280,40 @@ main {
 
 .pet-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
 }
 
-/* Inside the row the two buttons share the width evenly. */
+/* Inside the row the buttons share the width, and they wrap onto
+   a new line on a narrow phone. */
 .pet-actions .primary-button {
+  flex: 1 1 110px;
+  width: auto;
   margin-top: 20px;
+}
+
+/* A lighter button, used for "Next Day" so that it looks
+   different from the two care buttons. */
+.button-outline {
+  background-color: #FFFFFF;
+  color: var(--green-dark);
+  border: 2px solid var(--green);
+}
+
+.button-outline:hover {
+  background-color: #EFF5EA;
+}
+
+/* The line under the buttons. It explains what just happened,
+   for example that happiness already reached 100. */
+.pet-message {
+  margin: 14px 0 0;
+  padding: 10px 14px;
+  background-color: #EFF5EA;
+  border-left: 4px solid var(--green);
+  border-radius: 0 10px 10px 0;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
 }
 
 /* 10. Wider screens (laptops and tablets) ------------------- */
