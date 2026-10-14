@@ -96,6 +96,70 @@
 
       </div>
     </section>
+
+    <!-- My Virtual Dog: adopt a dog, then look after it. -->
+    <section class="my-dog" aria-labelledby="my-dog-heading">
+      <h2 id="my-dog-heading">My Virtual Dog</h2>
+      <p class="section-note">
+        Pick a breed, give your dog a name, then press Adopt. After that you can feed it or play with it.
+      </p>
+
+      <div class="my-dog-layout">
+
+        <!-- Adopt form -->
+        <form class="adopt-form" id="adopt-form" novalidate>
+          <div class="form-row">
+            <label for="dog-breed">Breed</label>
+            <select id="dog-breed" name="breed">
+              <option value="Beagle">Beagle</option>
+              <option value="Golden Retriever">Golden Retriever</option>
+              <option value="Poodle">Poodle</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="dog-name">Dog name (up to 20 characters)</label>
+            <input type="text" id="dog-name" name="dogName" maxlength="20"
+                   placeholder="e.g. Biscuit" autocomplete="off">
+          </div>
+
+          <button class="primary-button" type="submit">Adopt</button>
+
+          <p class="form-message" id="form-message" role="status" aria-live="polite" hidden></p>
+        </form>
+
+        <!-- The adopted dog. It stays hidden until a name is accepted. -->
+        <div class="dog-pet" id="pet-card" hidden>
+          <img class="dog-image" id="pet-image"
+               src="assets/beagle.svg" alt="Illustration of a Beagle"
+               width="200" height="200">
+
+          <dl class="pet-facts">
+            <dt>Name</dt>
+            <dd id="pet-name"></dd>
+            <dt>Breed</dt>
+            <dd id="pet-breed"></dd>
+            <dt>Day</dt>
+            <dd id="pet-day"></dd>
+            <dt>Growth stage</dt>
+            <dd id="pet-stage"></dd>
+            <dt>Happiness</dt>
+            <dd><span id="pet-happiness"></span> / 100</dd>
+          </dl>
+
+          <div class="happiness-track" id="happiness-track" role="progressbar" aria-label="Happiness"
+               aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <div class="happiness-fill" id="happiness-fill"></div>
+          </div>
+
+          <div class="pet-actions">
+            <button class="primary-button" id="feed-button" type="button">Feed</button>
+            <button class="primary-button" id="play-button" type="button">Play</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
